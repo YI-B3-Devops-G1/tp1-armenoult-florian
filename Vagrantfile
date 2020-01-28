@@ -68,6 +68,4 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "file", source: "index.html", destination: "/tmp/index.html"
   config.vm.provision "shell", path: "bootstrap.sh"
-  config.vm.provision "shell", inline: <<-SHELL
-  SHELL
 end
